@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+    transition: color 300ms
+}
+
+body{
+    font-size: 14px;
+    color: #444;
+    background: #f9f9f9;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* 设置主页的宽度 */
+.container{
+   display: block;
+   max-width: 1080px;
+   margin: 0 auto;
+}
+
+
+/* 设置向左浮动 */
+.fl{
+    float: left;
+}
+
+/* 设置向右浮动 */
+.fr{
+    float: right;
+}
+
+/* 设置伪类，消除浮动 */
+.clearf:after,
+.clearf::before
+{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/* 设置每个块所占的比例 */
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9{
+    display: block;
+    position: relative;
+    min-height: 1px;
+    float: left
+}
+
+.col-1{
+    width: 10%
+}
+
+.col-2{
+    width: 20%
+}
+.col-3{
+    width: 30%
+}
+
+.col-4{
+    width: 40%
+}
+
+.col-5{
+    width: 50%
+}
+
+.col-6{
+    width: 60%
+}
+
+.col-7{
+    width: 70%
+}
+
+.col-8{
+    width: 80%
+}
+
+.col-9{
+    width: 90%
+}
+
+.top-nav{
+    background: #eee;
+}
+
+.top-nav .item{
+    display: inline-block;
+    padding: 6px 10px;
+    color: #666
+}
+
+.top-nav .item:hover{
+    color: #333
+}
+
+.header{
+    padding: 20px 0
+}
+
+.header .logo{
+    font-size: 30px
+}
+
+.header .search-bar{
+    border: 2px solid #dd182b;
+    background: #dd182b
+}
+
+.header .search-bar input,
+.header .search-bar button{
+    display: block;
+    float: left;
+    border: 0;
+    padding: 10px;
+    outline: 0
+}
+
+.header .search-bar input{
+    width: 80%
+}
+
+.header .search-bar input:focus{
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, .2) 
+}
+
+.header .search-bar button{
+    width: 20%;
+    background: #ce1829;
+    color: #fff;
+}
+
+header .search-bar button:hover{
+    background: rgba(0, 0, 0, .1)
+}
+
+.header .cart {
+    text-align: center;
+}
+
+.header .cart a{
+    float: right;
+    padding: 10px;
+    background: #fff;
+    border: 2px solid #eee;
+    width: 67%;
+    color: #dd182b;
+}
+
+.main-promote {
+    background: #eee;
+}
+
+.main-promote .cat{
+    background: #6e6568;
+    color: #fff;
+    height: 454px;
+}
+
+.main-promote .cat .item{
+    padding: 12px 20px;
+    text-align: center;
+}
+.main-promote .cat .item:hover{
+    background: rgba(0, 0, 0, .1)
+}
+
+.main-promote .info{
+    padding: 10px;
+    line-height: 1.7;
+    background: #fff;
+    color: #888;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    height: 454px;
+}
+
+.main-promote .info .avatar{
+    width: 50px;
+    height: 50px;
+    background: #aaa;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px
+}
+
+.main-promote .info>*{
+    margin: 9px;
+}
+
+.seg-adv{
+    display: inline-block;
+    background: #888;
+    height: 50px;
+    margin: 8px 0;
+    width: 100%
+    
+
+}
+
+.cat-promote .title::before{
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 25px;
+    background: #dd182b;
+    margin-right: 10px;
+}
+
+.cat-promote .title{
+    font-size: 22px;
+}
+
+.cat-promote .item{
+    padding: 5px;
+
+}
+
+.cat-promote .card{
+    height: 300px;
+    background: #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2)
+}
+
+.footer{
+    background: #666;
+    text-align: center;
+    color: #999;
+    padding: 25px 0;
+    margin-top: 25px
+}
